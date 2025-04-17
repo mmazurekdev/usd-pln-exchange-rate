@@ -8,6 +8,6 @@
     "beautifulsoup4"
   ],
   "issue_tracker":"https://github.com/mmazurekdev/usd-pln-exchange-rate/issues",
-  "codeowners": [],
+  "codeowners": ["@mmazurekdev"],
   "iot_class": "cloud_polling"
 }
