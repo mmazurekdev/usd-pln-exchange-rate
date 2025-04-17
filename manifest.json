@@ -2,11 +2,12 @@
   "domain": "usd_pln",
   "name": "USD to PLN Exchange Rate",
   "version": "1.0",
-  "documentation": "",
+  "documentation": "https://github.com/mmazurekdev/usd-pln-exchange-rate",
   "requirements": [
     "requests",
     "beautifulsoup4"
   ],
+  "issue_tracker":"https://github.com/mmazurekdev/usd-pln-exchange-rate/issues",
   "codeowners": [],
   "iot_class": "cloud_polling"
 }
