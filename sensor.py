@@ -1,10 +1,9 @@
-import requests
-from bs4 import BeautifulSoup
-from homeassistant.components.sensor import SensorEntity
-from homeassistant.const import CONF_SCAN_INTERVAL, CONF_URL
-import voluptuous as vol
 import homeassistant.helpers.config_validation as cv
+import requests
+import voluptuous as vol
+from bs4 import BeautifulSoup
 from homeassistant.components.sensor import PLATFORM_SCHEMA
+from homeassistant.components.sensor import SensorEntity
 
 MIN_15 = 60 * 15
 URL = "https://www.investing.com/currencies/usd-pln-converter"
@@ -33,17 +32,14 @@ class UsdPlnSensor(SensorEntity):
 
     @property
     def unit_of_measurement(self):
-        """Definiuje jednostkę miary."""
         return "PLN"
 
     @property
     def device_class(self):
-        """Ustawia klasę urządzenia dla encji."""
         return "monetary"
 
     @property
     def state_class(self):
-        """Definiuje typ danych encji (pomiar)."""
         return "measurement"
 
     @property
@@ -60,4 +56,4 @@ class UsdPlnSensor(SensorEntity):
             self._state = round(float(rate_element), 4)
         except Exception as e:
             self._state = None
-            print(f"Data retriving error: {e}")
+            print(f"Data downloading error: {e}")
