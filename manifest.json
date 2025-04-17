@@ -1,0 +1,12 @@
+{
+  "domain": "usd_pln",
+  "name": "USD to PLN Exchange Rate",
+  "version": "1.0",
+  "documentation": "",
+  "requirements": [
+    "requests",
+    "beautifulsoup4"
+  ],
+  "codeowners": [],
+  "iot_class": "cloud_polling"
+}
