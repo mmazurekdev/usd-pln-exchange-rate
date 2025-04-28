@@ -1,5 +1,5 @@
 {
-  "domain": "usd_pln",
+  "domain": "usd_pln_exchange",
   "name": "USD to PLN Exchange Rate",
   "version": "1.0",
   "documentation": "https://github.com/mmazurekdev/usd-pln-exchange-rate",
